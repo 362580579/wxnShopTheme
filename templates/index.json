@@ -1,15 +1,12 @@
 {
   "sections": {
-    "image_banner": {
+    "image_banner1": {
       "type": "image-banner",
-      "settings": {
-        "desktop_content_position": "middle-center"
-      },
       "blocks": {
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Talk about your brand"
+            "heading": ""
           }
         },
         "button": {
@@ -24,7 +21,15 @@
       "block_order": [
         "heading",
         "button"
-      ]
+      ],
+      "settings": {
+        "desktop_content_position": "middle-center",
+
+        "desktop_text_box_position": "flex-end",
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "adapt_height_first_image": false
+      }
     },
     "rich_text": {
       "type": "rich-text",
@@ -96,7 +101,7 @@
     }
   },
   "order": [
-    "image_banner",
+    "image_banner1",
     "rich_text",
     "featured_products",
     "collage",
