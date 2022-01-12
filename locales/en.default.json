@@ -40,7 +40,7 @@
     },
     "cart": {
       "view": "View my cart ({{ count }})",
-      "item_added": "Item added to your cart"
+      "item_added": "Cart"
     },
     "share": {
       "close": "Close share",
@@ -410,6 +410,22 @@
       "expired": "Expired",
       "copy_code_success": "Code copied successfully",
       "print_gift_card": "Print"
+    }
+  },
+  "homepage": {
+    "hero": {
+      "next_slide": "Next slide",
+      "previous_slide": "Previous slide",
+      "pause_slideshow": "Pause slideshow",
+      "play_slideshow": "Play slideshow",
+      "navigation_instructions": "Use left\/right arrows to navigate the slideshow or swipe left\/right if using a mobile device",
+      "slide_number": "Slide {{ slide_number }}, current"
+    },
+    "onboarding": {
+      "blog_title": "Your post's title",
+      "product_title": "Example Product Title",
+      "collection_title": "Collection title",
+      "no_content": "This section doesn’t currently include any content. Add content to this section using the sidebar."
     }
   }
 }

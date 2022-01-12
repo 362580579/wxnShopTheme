@@ -1,111 +1,157 @@
 {
-  "sections": {
-    "image_banner1": {
-      "type": "image-banner",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": ""
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
-            "button_label_2": ""
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "button"
-      ],
-      "settings": {
-        "desktop_content_position": "middle-center",
-
-        "desktop_text_box_position": "flex-end",
-        "color_scheme": "background-1",
-        "stack_images_on_mobile": true,
-        "adapt_height_first_image": false
-      }
-    },
-    "rich_text": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading"
-        },
-        "text": {
-          "type": "text"
-        },
-        "button": {
-          "type": "button"
-        }
-      },
-      "block_order": [
-        "heading",
-        "text",
-        "button"
-      ]
-    },
-    "featured_products": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured products",
-        "collection": "all",
-        "image_ratio": "square"
-      }
-    },
-    "collage": {
-      "type": "collage",
-      "blocks": {
-        "video": {
-          "type": "video"
-        },
-        "product": {
-          "type": "product"
-        },
-        "collection": {
-          "type": "collection"
-        }
-      },
-      "block_order": [
-        "video",
-        "product",
-        "collection"
-      ]
-    },
-    "video": {
-      "type": "video"
-    },
-    "multi_column": {
-      "type": "multicolumn",
-      "blocks": {
-        "column1": {
-          "type": "column"
-        },
-        "column2": {
-          "type": "column"
-        },
-        "column3": {
-          "type": "column"
-        }
-      },
-      "block_order": [
-        "column1",
-        "column2",
-        "column3"
-      ]
-    }
-  },
-  "order": [
-    "image_banner1",
-    "rich_text",
-    "featured_products",
-    "collage",
-    "video",
-    "multi_column"
-  ]
+	"sections": {
+		"image_banner": {
+			"type": "image-banner",
+			"blocks": {
+				"07291767-584b-4273-9069-8796650405e2": {
+					"type": "slide",
+					"settings": {
+						"slide_image": "shopify:\/\/shop_images\/2_0dd3f966-f3ae-4f0b-91f1-f0507c97de5d_1.jpg",
+						"internal_video": "",
+						"badge": "",
+						"title": "Slide",
+						"subtitle": "",
+						"button_label": "View all products",
+						"button_link": "",
+						"design": "design1",
+						"image_filter": "none",
+						"description_placement": "place-center"
+					}
+				},
+				"70239e29-5a0a-4231-ac8c-653a4b4c3c9a": {
+					"type": "slide",
+					"settings": {
+						"slide_image": "shopify:\/\/shop_images\/person-fishing-on-the-beach-is-silhouetted-at-sunset.jpg",
+						"internal_video": "",
+						"badge": "",
+						"title": "Slide",
+						"subtitle": "",
+						"button_label": "View all products",
+						"button_link": "",
+						"design": "design1",
+						"image_filter": "none",
+						"description_placement": "place-center"
+					}
+				},
+				"35eeccbc-a1a4-4b0e-a833-47515a7e0f5b": {
+					"type": "slide",
+					"settings": {
+						"slide_image": "shopify:\/\/shop_images\/wooden-toothbrushes-lined-up-against-a-green-background.jpg",
+						"internal_video": "",
+						"badge": "",
+						"title": "",
+						"subtitle": "",
+						"button_label": "",
+						"button_link": "",
+						"design": "design1",
+						"image_filter": "none",
+						"description_placement": "place-center"
+					}
+				}
+			},
+			"block_order": [
+				"07291767-584b-4273-9069-8796650405e2",
+				"70239e29-5a0a-4231-ac8c-653a4b4c3c9a",
+				"35eeccbc-a1a4-4b0e-a833-47515a7e0f5b"
+			],
+			"settings": {
+				"desktop_content_position": "middle-center",
+				"desktop_text_box_position": "flex-end",
+				"color_scheme": "background-1",
+				"stack_images_on_mobile": true,
+				"adapt_height_first_image": false
+			}
+		},
+		"advert_space": {
+			"type": "advert-space",
+			"name": "Advert",
+			"blocks": {
+				"advert1": {
+					"type": "advert",
+					"settings": {
+						"advert_image": "shopify:\/\/shop_images\/614-404.jpg",
+						"label": "",
+						"link": ""
+					}
+				},
+				"advert2": {
+					"type": "advert",
+					"settings": {
+						"advert_image":"shopify:\/\/shop_images\/DE_LANCI-eyeshadow-_2_540x_bd6b8e77-7cc1-4ab1-b569-f528c3b35da5.jpg",
+						"label": "",
+						"link": ""
+					}
+				}
+			},
+			"block_order": [
+				"advert1",
+				"advert2"
+			]
+		},
+		"featured_products": {
+			"type": "featured-collection",
+			"settings": {
+				"title": "Featured products",
+				"collection": "home-products",
+				"products_to_show": 6,
+				"show_view_all": true,
+				"swipe_on_mobile": false,
+				"image_ratio": "square",
+				"show_secondary_image": false,
+				"add_image_padding": false,
+				"show_image_outline": true,
+				"show_vendor": false,
+				"show_rating": false
+			}
+		},
+		"collage": {
+			"type": "collage",
+			"blocks": {
+				"video": {
+					"type": "video"
+				},
+				"product": {
+					"type": "product"
+				},
+				"collection": {
+					"type": "collection"
+				}
+			},
+			"block_order": [
+				"video",
+				"product",
+				"collection"
+			]
+		},
+		"video": {
+			"type": "video"
+		},
+		"multi_column": {
+			"type": "multicolumn",
+			"blocks": {
+				"column1": {
+					"type": "column"
+				},
+				"column2": {
+					"type": "column"
+				},
+				"column3": {
+					"type": "column"
+				}
+			},
+			"block_order": [
+				"column1",
+				"column2",
+				"column3"
+			]
+		}
+	},
+	"order": [
+		"image_banner",
+		"advert_space",
+		"featured_products",
+		"collage",
+		"video",
+		"multi_column"
+	]
 }

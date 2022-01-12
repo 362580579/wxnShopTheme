@@ -55,7 +55,7 @@
 }
 
 .card--outline:not(.card--soft) {
-  border: calc(0.1rem / var(--font-body-scale)) solid rgba(var(--color-foreground), 0.04);
+  /*border: calc(0.1rem / var(--font-body-scale)) solid rgba(var(--color-foreground), 0.04);*/
 }
 
 .card--light-border {
@@ -164,6 +164,8 @@
   display: block;
   margin: 0;
   padding-right: 1.2rem;
+    height: 3rem;
+    text-overflow:ellipsis;overflow:hidden;white-space:nowrap;
 }
 
 .card-information__wrapper {

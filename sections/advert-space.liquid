@@ -1,0 +1,84 @@
+<div class="advert-space">
+{% for block in section.blocks %}
+	{% assign img_url = block.settings.advert_image %}
+	<div class="advert-space-item">
+		<img src="{{ img_url | img_url: master }}"
+		     srcset="{% case img_url.width %}
+							{% when img_url.width >= 375 %}{{ img_url | img_url: '375x' }}375w,
+							{% when img_url.width >= 750 %}{{ img_url | img_url: '750x' }}750w,
+							{% when img_url.width >= 1100 %}{{ img_url | img_url: '1100x' }}1100w,
+							{% when img_url.width >= 1500 %}{{ img_url | img_url: '1500x' }}1500w,
+							{% when img_url.width >= 1780 %}{{ img_url | img_url: '1780x' }}1780w,
+							{% when img_url.width >= 2000 %}{{ img_url | img_url: '2000x' }}2000w,
+							{% when img_url.width >= 3000 %}{{ img_url | img_url: '3000x' }} 3000w,
+							{% when img_url.width >= 3840 %}{{ img_url | img_url: '3840x' }}3840w,
+							{% else %} {{ img_url | img_url: 'master' }}w,
+							{% endcase %}"
+		     loading="lazy"
+		     alt="{{ img_url.alt | escape }}"
+		     style="filter:{{ block.settings.image_filter }}; ">
+	</div>
+{% endfor %}
+</div>
+<style>
+	.advert-space{
+		width: 100%;
+		display: flex;
+	}
+    .advert-space-item {
+	    width:50%;
+	    overflow: hidden;
+	    cursor: pointer;
+    }
+    .advert-space-item img{
+	    width:100%;
+	    max-height: 50rem;
+        transition: all 300ms ease-out;
+        -moz-transition: all 300ms ease-out;
+        -webkit-transition: all 300ms
+    }
+    .advert-space-item img:hover{
+        transform: scale(1.03);
+        -moz-transform: scale(1.03);
+        -webkit-transform: scale(1.03);
+    }
+</style>
+
+{% schema %}
+{
+"name": "广告位",
+"tag": "section",
+"class": "spaced-section spaced-section--full-width",
+"settings": [
+],
+"blocks": [
+{
+"type": "advert",
+"name": "广告位置",
+"limit": 2,
+"settings": [
+{
+"type": "image_picker",
+"id": "advert_image",
+"label": "选择广告位图片"
+},
+{
+"type": "url",
+"id": "link",
+"label": "广告链接"
+}
+]
+}
+],
+"presets": [
+{
+"name": "Advert Space",
+"blocks": [
+{
+"type": "advert"
+}
+]
+}
+]
+}
+{% endschema %}

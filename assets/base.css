@@ -883,7 +883,7 @@ summary::-webkit-details-marker {
 @media screen and (min-width: 990px) {
   .title,
   .title-wrapper-with-link {
-    margin: 5rem 0 3rem;
+    margin: 1rem 0 1rem;
   }
 
   .title--primary {
@@ -974,7 +974,7 @@ summary::-webkit-details-marker {
     padding-left: 1rem;
     padding-bottom: 1rem;
     width: calc(25% - 1rem * 3 / 4);
-    max-width: 50%;
+    max-width: 25%;
   }
 }
 
@@ -1810,11 +1810,15 @@ input[type='checkbox'] {
 /* section-announcement-bar */
 #shopify-section-announcement-bar {
   z-index: 4;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
 }
 
 .announcement-bar {
   border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
   color: rgb(var(--color-foreground));
+    background: rgb(198,37,33) !important;
 }
 
 .announcement-bar__link {
@@ -1850,7 +1854,10 @@ input[type='checkbox'] {
 
 /* section-header */
 #shopify-section-header {
-  z-index: 3;
+  z-index: 5;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 30px;
 }
 
 .shopify-section-header-sticky {
@@ -1874,7 +1881,8 @@ input[type='checkbox'] {
 }
 
 .header-wrapper--border-bottom {
-  border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
+  /*border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);*/
+    box-shadow: 0 1rem 3rem 0 rgba(150,150,150, 0.1);
 }
 
 .header {
@@ -1888,8 +1896,8 @@ input[type='checkbox'] {
 
 @media screen and (min-width: 990px) {
   .header {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   .header--has-menu:not(.header--middle-left) {
@@ -1942,7 +1950,7 @@ input[type='checkbox'] {
 
 .header__heading-link {
   display: inline-block;
-  padding: 0.75rem;
+  /*padding: 0.75rem;*/
   text-decoration: none;
   word-break: break-word;
 }
@@ -2231,7 +2239,10 @@ details[open] > .header__icon--menu .icon-hamburger {
 }
 
 .header__menu-item span {
-  transition: text-decoration var(--duration-short) ease;
+  /*transition: text-decoration var(--duration-short) ease;*/
+    font-weight: bold;
+    font-size: 1.8rem !important;
+    color: rgba(var(--color-foreground), 1);
 }
 
 .header__menu-item:hover span {

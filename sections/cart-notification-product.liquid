@@ -1,6 +1,8 @@
 {%- if cart != empty -%}
+	<div class="data-card-items" data-carditems="{{  cart.items}}"></div>
   {%- for item in cart.items -%}
-    <div id="cart-notification-product-{{ item.id }}" class="cart-item">
+	   
+	    <div id="cart-notification-product-{{ item.id }}" class="cart-item">
       {% if item.image %}
         <img class="cart-notification-product__image"
           src="{{ item.image | img_url: '140x' }}"
@@ -12,6 +14,7 @@
       {% endif %}
       <div>
         <h3 class="cart-notification-product__name h4">{{ item.product.title | escape }}</h3>
+	      {%- render 'price', product: item.product, use_variant: false, show_badges: false -%}
           <dl>
             {%- unless item.product.has_only_default_variant -%}
               {%- for option in item.options_with_values -%}

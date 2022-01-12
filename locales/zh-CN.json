@@ -410,5 +410,20 @@
       "copy_code_success": "已成功复制代码",
       "print_gift_card": "打印"
     }
+  }, "homepage": {
+  "hero": {
+    "next_slide": "下一张幻灯片",
+    "previous_slide": "上一张幻灯片",
+    "pause_slideshow": "暂停幻灯片",
+    "play_slideshow": "播放幻灯片",
+    "navigation_instructions": "使用左\/右箭头浏览幻灯片或者在使用移动设备时向左\/向右轻扫",
+    "slide_number": "当前幻灯片 {{ slide_number }}"
+  },
+  "onboarding": {
+    "blog_title": "您的文章的标题",
+    "product_title": "产品标题示例",
+    "collection_title": "产品系列名称",
+    "no_content": "此部分目前不包含任何内容。使用侧边栏向此部分添加内容。"
   }
+}
 }
