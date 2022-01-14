@@ -6,7 +6,7 @@
         "settings": {
           "color_scheme": "background-1",
           "logo": "shopify:\/\/shop_images\/Logo_100x_e39b88d5-7da4-44e0-986f-47438987f736.jpg",
-          "logo_image": "",
+          "logo_image": "shopify:\/\/shop_images\/Logo_100x_e39b88d5-7da4-44e0-986f-47438987f736.jpg",
           "logo_width": 100,
           "logo_position": "middle-left",
           "menu": "main-menu",
